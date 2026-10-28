@@ -1,0 +1,7 @@
+trait,index,n_GOOD_windows,Pearson_r,Spearman_r
+Cw,NDVI,8,0.911,0.8095
+Cw,NDMI,8,0.7819,0.8095
+laiCw,NDVI,8,0.9833,0.9524
+laiCw,NDMI,8,0.9617,0.9524
+LAI,NDVI,8,0.9861,0.9762
+LAI,NDMI,8,0.9425,0.9762

@@ -1,0 +1,10 @@
+{
+  "outputs/final_evidence/step20a/final_evidence_audit.txt": "e8cc78e69ffd3899c74b8c54667fdd4858e026d1e97b7224a5934adfbdba48cb",
+  "outputs/final_evidence/step20a/final_evidence_register.json": "8a93a7cc88452b6d9416905a397f6021a2d35eb844d77681a5fe37dc1c4183ef",
+  "outputs/final_evidence/step20a/Table_01_final_seasonal_summary.csv": "cf89c71d002022091937fadb3d3505166df304e379691ac50cdf7da24c4de488",
+  "outputs/final_evidence/step20a/Table_02_temporal_correlations_GOOD.csv": "4c92ba562221470ecd893593aad954ec5b36769a081af4575a1c258dce387747",
+  "outputs/final_evidence/step20a/Table_03_spatial_correlation_summary_GOOD.csv": "da1f7dcd6bc2ab7159256deff6f51066cc9820d9dca851fc6e6578c08f7e2b81",
+  "outputs/final_evidence/step20a/Table_04_RU_sensitivity.csv": "778c1eec0a733ecccf6bd0bec602bd88bc91fb9b3f2e7801c3036987a2e23145",
+  "outputs/final_evidence/step20a/Table_05_robustness_checks.csv": "79764824a13742e3957ab5321fa7fc2e2016b3f733596b7c21c5f639af8bc27d",
+  "outputs/final_evidence/step20a/Table_06_EO_hydroclimate_correlations.csv": "b53e31081b439677ec043dd23edd022a866211c1d51e7fb22356a8740e47a891"
+}

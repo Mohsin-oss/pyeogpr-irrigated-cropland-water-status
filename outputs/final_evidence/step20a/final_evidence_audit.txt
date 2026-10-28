@@ -1,0 +1,41 @@
+STEP 20A — FINAL EVIDENCE AUDIT
+================================================================================
+
+PRIMARY DOMAIN
+--------------------------------------------------------------------------------
+Threshold-defined C25-N40 mask: 229,729 pixels (91.8916 km²)
+GOOD-window retrieval-supported agricultural domain: 223,600 pixels (89.4400 km²)
+Supported fraction of threshold mask: 97.3321%
+W09 stable-core coverage: 55.0215%
+
+HEADLINE CORRELATIONS
+--------------------------------------------------------------------------------
+laiCw vs NDVI temporal Pearson r = 0.9833
+laiCw vs NDMI temporal Pearson r = 0.9617
+LAI vs NDVI temporal Pearson r = 0.9861
+Cw vs NDMI spatial Pearson range across GOOD windows = 0.2810 to 0.8646
+
+ROBUSTNESS
+--------------------------------------------------------------------------------
+Mask sensitivity area range = 88.5376% to 89.6982%
+Maximum mask-sensitivity nMAD = 0.3870%
+Stable-support maximum nMAD = 0.000002%
+Stable-support minimum trajectory r = 1.000000
+
+UNCERTAINTY
+--------------------------------------------------------------------------------
+Largest RU-induced maximum median shift = laiCw at RU <20%: 1427.70%
+No universal hard RU threshold is used.
+
+HYDROCLIMATE
+--------------------------------------------------------------------------------
+Strongest absolute raw Pearson association = laiCw vs SM0_28: r=-0.7476
+Interpretation: descriptive environmental context only; not causal validation.
+
+AUDIT WARNINGS
+--------------------------------------------------------------------------------
+- The threshold-defined C25-N40 mask contains 6129 agricultural pixels outside the common GOOD-window retrieval footprint. All Step 17 analyses already excluded these through the common-validity mask. Report the effective analysis-supported agricultural domain as 223600 pixels (89.4400 km²), while retaining 229729 pixels (91.8916 km²) as the threshold-defined mask.
+
+AUDIT ERRORS
+--------------------------------------------------------------------------------
+None.

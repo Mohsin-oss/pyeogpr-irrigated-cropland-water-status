@@ -1,0 +1,10 @@
+trait,comparison_index,RU_threshold_pct,retention_min_pct,retention_median_pct,retention_max_pct,median_agricultural_domain_retained_pct,max_absolute_median_shift_pct,median_absolute_median_shift_pct,median_filtered_spatial_Pearson_r
+Cw,NDMI,20,0.0,0.0,3.33,0.0,238.56,72.19,-0.1588
+Cw,NDMI,30,0.01,0.2,50.98,0.19,152.42,97.58,0.5152
+Cw,NDMI,40,0.4,6.94,86.36,6.75,108.65,49.86,0.7346
+laiCw,NDMI,20,0.0,0.34,24.55,0.33,1427.7,192.35,0.8031
+laiCw,NDMI,30,0.26,6.97,51.3,6.79,1017.03,175.35,0.9127
+laiCw,NDMI,40,1.44,18.58,63.61,18.0,804.23,122.3,0.9501
+LAI,NDVI,20,0.0,0.04,9.71,0.04,1063.4,118.08,0.168
+LAI,NDVI,30,0.1,1.37,43.14,1.33,792.6,221.62,0.5055
+LAI,NDVI,40,1.45,7.33,61.29,7.14,622.09,155.44,0.74
