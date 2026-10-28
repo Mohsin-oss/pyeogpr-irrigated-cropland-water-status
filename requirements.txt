@@ -1,0 +1,12 @@
+earthengine-api==1.7.50
+rasterio==1.5.2
+numpy==2.5.4
+matplotlib==3.11.2
+geopandas==1.2.0
+requests==2.34.2
+pandas==2.3.3
+scipy==1.18.1
+openeo==0.53.0
+xarray==2026.9.0
+shapely==2.2.0
+Pillow==13.0.0
