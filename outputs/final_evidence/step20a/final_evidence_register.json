@@ -1,0 +1,66 @@
+{
+  "analysis_status": "FINAL_EVIDENCE_AUDIT",
+  "primary_analysis": {
+    "threshold_defined_mask": "C25-N40",
+    "threshold_defined_agricultural_pixels": 229729,
+    "threshold_defined_agricultural_area_km2": 91.8916,
+    "GOOD_window_supported_agricultural_pixels": 223600,
+    "GOOD_window_supported_agricultural_area_km2": 89.44,
+    "GOOD_window_supported_fraction_of_mask_pct": 97.33207387835232,
+    "GOOD_windows": [
+      "W01",
+      "W02",
+      "W04",
+      "W05",
+      "W06",
+      "W07",
+      "W08",
+      "W10"
+    ],
+    "limited_window": "W09",
+    "missing_window": "W03"
+  },
+  "headline_results": {
+    "laiCw_vs_NDVI_temporal_Pearson_r": 0.9832589590616367,
+    "laiCw_vs_NDMI_temporal_Pearson_r": 0.9617484034342477,
+    "LAI_vs_NDVI_temporal_Pearson_r": 0.986056377288177,
+    "Cw_vs_NDMI_spatial_Pearson_range_GOOD": [
+      0.281,
+      0.8646
+    ],
+    "Cw_vs_NDMI_spatial_min_window": "W04",
+    "Cw_vs_NDMI_spatial_max_window": "W08",
+    "mask_sensitivity_max_normalized_MAD_pct": 0.3870151433329564,
+    "stable_support_max_normalized_MAD_pct": 2.40872579224557e-06,
+    "largest_RU_filter_median_shift": {
+      "trait": "laiCw",
+      "RU_threshold_pct": 20,
+      "maximum_absolute_median_shift_pct": 1427.6963780324447
+    },
+    "strongest_absolute_raw_hydroclimate_Pearson": {
+      "EO_variable": "laiCw",
+      "climate_variable": "SM0_28",
+      "Pearson_r": -0.7476055607616257,
+      "interpretation": "Descriptive only; not causal and strongly confounded by seasonal phenology."
+    }
+  },
+  "claim_boundaries": [
+    "PyEOGPR/index agreement is comparison between Sentinel-2-derived approaches, not independent validation.",
+    "Cw's weaker or more variable relationship with indices does not prove superior water-stress sensitivity.",
+    "CHIRPS and ERA5-Land provide environmental context and do not measure field-level irrigation.",
+    "RU thresholds are sensitivity treatments only.",
+    "W09 is retained descriptively but excluded from primary GOOD-window temporal correlations.",
+    "W03 is a genuine missing EO window and is not interpolated."
+  ],
+  "source_files": {
+    "seasonal_statistics": "D:\\peEOGPR\\outputs\\analysis\\step17a\\seasonal_window_statistics.csv",
+    "spatial_correlations": "D:\\peEOGPR\\outputs\\analysis\\step17a\\spatial_correlations_by_window.csv",
+    "temporal_correlations": "D:\\peEOGPR\\outputs\\analysis\\step17a\\temporal_correlations_good_windows.csv",
+    "RU_sensitivity": "D:\\peEOGPR\\outputs\\analysis\\step17b\\ru_good_window_summary.csv",
+    "stable_support": "D:\\peEOGPR\\outputs\\analysis\\step17c\\stable_support_summary.csv",
+    "hydroclimate": "D:\\peEOGPR\\outputs\\hydroclimate\\hydroclimate_15day_windows.csv",
+    "hydroclimate_correlations": "D:\\peEOGPR\\outputs\\analysis\\step18b\\EO_hydroclimate_correlations_GOOD.csv",
+    "mask_sensitivity": "D:\\peEOGPR\\outputs\\mask\\qa\\mask_sensitivity_summary.csv",
+    "mask_manifest": "D:\\peEOGPR\\outputs\\mask\\agricultural_mask_C25_N40_manifest.json"
+  }
+}

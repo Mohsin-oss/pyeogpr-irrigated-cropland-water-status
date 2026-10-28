@@ -1,0 +1,68 @@
+diff --git a/pyeogpr/gee_processing.py b/pyeogpr/gee_processing.py
+index c7705981..494c953c 100644
+--- a/pyeogpr/gee_processing.py
++++ b/pyeogpr/gee_processing.py
+@@ -60,16 +60,18 @@ class EarthEngine:
+     """
+ 
+     def __init__(
+-        self,
+-        projectID,
+-        sensor,
+-        biovar,
+-        bounding_box,
+-        temporal_extent,
+-        spatial_resolution,
+-        cloudmask=False,
+-        bands = None
+-    ):
++    self,
++    projectID,
++    sensor,
++    biovar,
++    bounding_box,
++    temporal_extent,
++    spatial_resolution,
++    cloudmask=False,
++    bands=None,
++    scene_cloud_threshold=40,
++):
++        
+         self.projectID = projectID
+         # EE Auth
+         ee.Authenticate()
+@@ -107,6 +109,7 @@ class EarthEngine:
+         self.spatial_resolution = spatial_resolution
+         self.cloudmask = cloudmask
+         self.bands = bands
++        self.scene_cloud_threshold = scene_cloud_threshold
+         self.timeWindows = None
+         self.assetpath = None
+         self.gpr_model = None
+@@ -123,8 +126,9 @@ class EarthEngine:
+             self.model_imported = user_module
+ 
+         else:
+-            url = f"https://raw.githubusercontent.com/daviddkovacs/pyeogpr/refs/heads/main/models/{search_sensor}_{self.biovar}_GEE.py"
++            url = f"https://raw.githubusercontent.com/emmadcle/pyeogpr/7c470644f33cc08ca934e0e44f3808b17aaf07f5/models/{search_sensor}_{self.biovar}_GEE.py"
+             response = requests.get(url)
++            response.raise_for_status()
+ 
+             with open("model_imported.py", "w") as f:
+                 f.write("import ee\n")
+@@ -246,10 +250,13 @@ class EarthEngine:
+             image = ee.Image(
+                 self.imcol.filterDate(fecha_inicio, fecha_fin)
+                 .filterBounds(self.bbox)
+-                .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 40)
++                .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', self.scene_cloud_threshold)
+                 .map(self.quality_mask_sentinel2)
+                 .select(self.bands)  
+-                .max()
++                # Project patch:
++# Use mean temporal compositing to match the method described
++# in Kovács et al. (2025), rather than per-band maximum compositing.
++                .mean()
+                 .clip(self.bbox)
+             ).divide(10000)
+             

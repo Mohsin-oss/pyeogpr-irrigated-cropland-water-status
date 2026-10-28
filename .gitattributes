@@ -1,0 +1,6 @@
+# Preserve locked evidence bytes across platforms for checksum verification.
+outputs/final_evidence/** -text
+*.png binary
+*.py text eol=lf
+*.md text eol=lf
+*.diff -text

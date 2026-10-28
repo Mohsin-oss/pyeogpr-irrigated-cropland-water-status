@@ -1,0 +1,6 @@
+test,primary_result,secondary_result,interpretation
+Agricultural-mask threshold sensitivity,Area 88.54–89.70%,max nMAD=0.39%; min r=1.0000,Seasonal trajectories robust to reasonable mask-threshold perturbations.
+Stable GOOD-window spatial support,"223,600 pixels; 89.44 km²",97.33% of threshold-defined agricultural mask,All eight GOOD-window seasonal trajectories use the same retrieval-supported agricultural footprint.
+Stable-support trajectory sensitivity,max nMAD=0.0000%,min trajectory r=1.000000,Seasonal medians unchanged when restricted to identical spatial support.
+W09 spatial support,55.02% of stable GOOD-window core,Status = LIMITED,W09 retained descriptively but excluded from primary eight-window temporal correlations.
+Relative-uncertainty filtering,"RU <20%, <30%, <40% tested",Strong retention loss and large trait-median shifts,RU thresholds are sensitivity treatments only; no universal hard RU cutoff used.
