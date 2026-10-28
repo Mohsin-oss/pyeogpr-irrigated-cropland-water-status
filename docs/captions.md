@@ -93,7 +93,7 @@ Minimum, median and maximum within-window spatial Pearson and Spearman coefficie
 
 ## Table 4 — Relative-uncertainty sensitivity
 
-Retention percentages, trait-median percentage shifts and filtered spatial Pearson coefficients for RU <20%, <30% and <40%, summarized across GOOD windows. `retention_*` is relative to the valid trait/index baseline, whereas `median_agricultural_domain_retained_pct` is relative to the full threshold mask. Maximum and median absolute shifts are different summaries; the largest reported shift is laiCw at RU <20%. Some summaries omit non-finite values where a filtered sample is insufficient. Thresholds are sensitivity treatments, not validated quality cutoffs. W03 and W09 are excluded.
+Retention percentages, trait-median percentage shifts and filtered spatial Pearson coefficients for RU <20%, <30% and <40%, summarized across GOOD windows. `retention_*` is relative to valid trait/index pixels with positive predictions and non-negative uncertainty, whereas `median_agricultural_domain_retained_pct` is relative to the full threshold mask. Maximum and median absolute shifts are different summaries; the largest reported shift is laiCw at RU <20%. Some summaries omit non-finite values where a filtered sample is insufficient. Thresholds are sensitivity treatments, not validated quality cutoffs. W03 and W09 are excluded.
 
 ## Table 5 — Robustness checks
 

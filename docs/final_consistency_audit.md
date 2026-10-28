@@ -28,4 +28,4 @@ The root had no Git metadata. An existing matching private GitHub repository was
 
 ## Remaining limits
 
-Fresh environment installation and new cloud retrieval/export runs were not performed. Pixel-level reproduction requires the locally retained rasters or authorized cloud exports. A clean archive can verify the locked evidence and redraw core figures from supporting CSVs. The study remains unvalidated against field measurements, and no journal publication status is claimed. External data and software retain their own licenses.
+Fresh environment installation and new cloud retrieval/export runs were not performed. Pixel-level reproduction requires the locally retained rasters or authorized cloud exports. A clean Git archive was extracted separately: its verification passed all 77 checks and its core-figure script regenerated all six figures successfully from the included supporting CSVs using the existing Python environment. The study remains unvalidated against field measurements, and no journal publication status is claimed. External data and software retain their own licenses.

@@ -58,7 +58,7 @@ Relative uncertainty divides native uncertainty by predicted trait magnitude; th
 
 ### 4.5 Environmental context
 
-CHIRPS provides within-window rainfall totals and preceding 30-day rainfall totals, summarized spatially over the study area. ERA5-Land provides mean 2-m temperature and a depth-weighted upper-soil-water proxy from its first two layers. Contextual hydroclimate remains available during W03 even though EO is missing. Concurrent correlations use only the eight GOOD EO windows. These raw correlations do not adjust for seasonal crop development or establish causal relationships.
+CHIRPS provides within-window rainfall totals and preceding 30-day rainfall totals, summarized spatially over the study area. ERA5-Land provides mean 2-m temperature and a depth-weighted upper-soil-water proxy from its first two layers, calculated as (7 × layer 1 + 21 × layer 2) / 28. Contextual hydroclimate remains available during W03 even though EO is missing. Concurrent correlations use only the eight GOOD EO windows. These raw correlations do not adjust for seasonal crop development or establish causal relationships.
 
 ## 5. Results
 
@@ -84,7 +84,7 @@ All eight GOOD windows shared the same effective retrieval-supported agricultura
 
 Table 4 shows severe retention loss and large shifts in trait medians. At RU <20%, median retained agricultural-domain fractions were 0.00% for Cw, 0.33% for laiCw and 0.04% for LAI (rounded). The largest absolute trait-median shift was 1427.70% for laiCw at RU <20%. This is a maximum across windows, not the median shift shown in the lower panel of Figure 4.
 
-Even RU <40% retained median domain fractions of only 6.75% for Cw, 18.00% for laiCw and 7.14% for LAI. Thus a hard cutoff substantially changes which vegetation conditions contribute to the summary. Retention expressed against the threshold-defined agricultural domain differs from retention among valid baseline retrievals; Table 4 includes both denominators.
+Even RU <40% retained median domain fractions of only 6.75% for Cw, 18.00% for laiCw and 7.14% for LAI. Thus a hard cutoff substantially changes which vegetation conditions contribute to the summary. Retention expressed against the threshold-defined agricultural domain differs from retention among valid baseline retrievals with positive predictions and non-negative uncertainty; Table 4 includes both denominators.
 
 ### 5.5 Hydroclimatic context
 
